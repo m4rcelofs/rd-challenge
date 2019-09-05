@@ -1,9 +1,10 @@
-function challenge() {
+function writeIn(ballot) {
+  // Write your code here
 
 }
 
 
 module.exports = {
-  challenge
+  writeIn
 };
 
