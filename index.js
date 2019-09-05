@@ -3,14 +3,8 @@
 const _ = require('lodash');
 
 function writeIn(ballot) {
-  const isValid = vote => _.isString(vote) && vote !== '';
-  // filter while iterating to avoid repeated loops
   const groupedVotes = ballot.reduce((acc, vote) => {
-    if (isValid(vote)) {
-      // consider that the candidate is the same regardless of case
-      const key = vote.toLowerCase();
-      acc[key] = (acc[key] || 0) + 1;
-    }
+    acc[vote] = (acc[vote] || 0) + 1;
     return acc;
   }, {});
 
@@ -24,7 +18,7 @@ function writeIn(ballot) {
       return previousCandidate;
     }, {name: '', votes: 0});
 
-  return _.startCase(winner.name);
+  return winner.name;
 }
 
 

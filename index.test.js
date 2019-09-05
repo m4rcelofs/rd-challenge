@@ -36,22 +36,6 @@ describe('RD Challenge test 1', () => {
     expect(result).toBe('Veronica')
   });
 
-  it('ignores null, empty, and other types', () => {
-    const votes = [
-      'Veronica',
-      0,
-      0,
-      null,
-      null,
-      '',
-      '',
-      1,
-      1,
-    ];
-    const result = writeIn(votes);
-    expect(result).toBe('Veronica')
-  });
-
   it('ignores cases', () => {
     const votes = [
       'Veronica',
