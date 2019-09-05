@@ -1,0 +1,14 @@
+{
+  "name": "rd-challenge",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://marcelofs@bitbucket.org/marcelofs/rd-challenge.git",
+  "author": "Marcelo Frantz <resultadosdigitais@marcelofs.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.15"
+  }
+}
