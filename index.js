@@ -22,7 +22,16 @@ function writeIn(ballot) {
 }
 
 
+'use strict';
+
+// Complete the csRush function below.
+function csRush(n, m, css, customers, vacant_css) {
+
+
+}
+
 module.exports = {
-  writeIn
+  csRush,
+  writeIn,
 };
 
